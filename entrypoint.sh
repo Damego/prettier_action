@@ -56,7 +56,7 @@ esac
 
 # Install plugins
 if [ -n "$INPUT_PRETTIER_PLUGINS" ]; then
-    echo "Installing plugins..."
+    echo "Installing plugins $INPUT_PRETTIER_PLUGINS ..."
     npm install $INPUT_PRETTIER_PLUGINS
 fi
 )
