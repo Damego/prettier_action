@@ -60,6 +60,8 @@ if [ -n "$INPUT_PRETTIER_PLUGINS" ]; then
     npm install $INPUT_PRETTIER_PLUGINS
 fi
 )
+echo "dir"
+ls -a
 
 PRETTIER_RESULT=0
 echo "Prettifying files..."
