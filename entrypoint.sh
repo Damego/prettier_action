@@ -47,17 +47,17 @@ esac
 
 case $INPUT_PRETTIER_VERSION in
     false)
-        npm install -g prettier
+        bun install prettier
         ;;
     *)
-        npm install -g prettier@$INPUT_PRETTIER_VERSION
+        bun install prettier@$INPUT_PRETTIER_VERSION
         ;;
 esac
 
 # Install plugins
 if [ -n "$INPUT_PRETTIER_PLUGINS" ]; then
     echo "Installing plugins $INPUT_PRETTIER_PLUGINS ..."
-    npm install -g $INPUT_PRETTIER_PLUGINS
+    bun install $INPUT_PRETTIER_PLUGINS
 fi
 )
 
