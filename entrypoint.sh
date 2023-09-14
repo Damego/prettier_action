@@ -80,10 +80,10 @@ if $INPUT_CLEAN_NODE_FOLDER; then
   fi
 fi
 
-if [ -f 'package-lock.json' ]; then
-  git checkout -- package-lock.json
+if [ -f 'bun.lockb' ]; then
+  git checkout -- bun.lockb
 else
-  echo "No package-lock.json file."
+  echo "No bun.lockb file."
 fi
 
 # To keep runtime good, just continue if something was changed
