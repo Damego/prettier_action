@@ -79,7 +79,7 @@ if $INPUT_CLEAN_NODE_FOLDER; then
     echo "No node_modules/ folder."
   fi
 fi
-ls -a
+
 if [ -f 'bun.lockb' ]; then
   rm bun.lockb
 else
