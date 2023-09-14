@@ -81,7 +81,7 @@ if $INPUT_CLEAN_NODE_FOLDER; then
 fi
 ls -a
 if [ -f 'bun.lockb' ]; then
-  git checkout -- bun.lockb
+  rm bun.lockb
 else
   echo "No bun.lockb file."
 fi
